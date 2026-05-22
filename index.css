@@ -36,7 +36,7 @@ header {
   font-size: 20px;
   display: flex;
   gap: 25px;
-
+  line-height: 1.5;
 }
 
 li {
@@ -46,4 +46,34 @@ li {
 .tourist div img {
   height: 200px;
   width: 450px;
+}
+
+@media (max-width: 768px) {
+
+  header h1 {
+      font-size: 28px;
+      text-align: center;
+  }
+
+  .tourist {
+    padding: 10px;
+  }
+
+  .tourist div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tourist img {
+      width: 100%;
+      height: auto;
+  }
+
+  ul {
+      padding-left: 20px;
+  }
+
+  .name {
+      font-size: 24px;
+  }
 }
